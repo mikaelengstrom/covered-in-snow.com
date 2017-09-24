@@ -1,0 +1,12 @@
+name: covered-in-snow.com
+markdown: kramdown
+highligther: pygments
+timezone: GMT+1
+exclude: ['Gemfile', 'Gemfile.lock', '*.sublime-*', 'lib','vendor', 'Rakefile', 's3_website.yml']
+relative_permalinks: false
+url: https://covered-in-snow.com
+author: Covered in Snow
+gems:
+    - jekyll-feed
+sass:
+  style: compressed
