@@ -8,5 +8,6 @@ url: https://covered-in-snow.com
 author: Covered in Snow
 gems:
     - jekyll-feed
+    - jekyll-sitemap
 sass:
   style: compressed
