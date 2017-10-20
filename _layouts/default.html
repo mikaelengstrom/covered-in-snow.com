@@ -9,16 +9,19 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-    {% include header.html %}
+      <div class="contain">
 
-    <div class="page-content">
-      <div class="wrapper center">
-        {{ content }}
+        {% include header.html %}
+
+        <div class="page-content">
+          <div class="wrapper center">
+            {{ content }}
+          </div>
+        </div>
+
+        {% include footer.html %}
+
       </div>
-    </div>
-
-    {% include footer.html %}
-
   </body>
 
 </html>
