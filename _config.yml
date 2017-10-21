@@ -13,5 +13,4 @@ gems:
     - jekyll-sitemap
 sass:
   style: compressed
-site:
-  title: 'hej'
+

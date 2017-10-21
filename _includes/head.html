@@ -1,4 +1,4 @@
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# music: http://ogp.me/ns/music#">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,10 +11,14 @@
   <link rel="stylesheet" href="index.css" type="text/css" />
 
 
-  <meta property="og:title" content="{{ site.title }}"/>
-  <meta property="og:image" content="{{ site.baseurl }}/img/og-img.jpg"/>
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+  <meta property="og:type" content="music.album"/>
+  <meta property="og:image" content="https://covered-in-snow.com/img/spaceboy-cover.jpg"/>
+  <meta property="music:musician" content="Covered in Snow"/>
+  <meta property="music:release_date" content="2017-10-22T11:00:00Z"/>
+  <meta property="og:title" content="Spaceboy"/>
   <meta property="og:site_name" content="{{ site.title }}"/>
-  <meta property="og:description" content="{{site.description}}" />
+  <meta property="og:description" content="{{ site.description }}" />
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
