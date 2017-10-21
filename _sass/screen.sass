@@ -1,11 +1,11 @@
 @import variables
 @import reset
 @import utils
+@import keyframes
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400|PT+Sans+Narrow:400,700')
 
 *
   +box-sizing(border-box)
-  -webkit-font-smoothing: antialiased
 
 html
   font-size: 16px
@@ -40,6 +40,7 @@ footer
     justify-content: center
 
 .sm-link
+  -webkit-font-smoothing: antialiased
   padding: 18px 1px 18px 17px
   @media screen and (min-width: 480px)
     padding: 18px 17px
@@ -98,6 +99,7 @@ footer
   width: 253px
   font-family: $font-links
   font-size: 1.2rem
+  -webkit-font-smoothing: antialiased
 
   &:after
     content: ""
@@ -126,7 +128,7 @@ footer
   @media screen and (min-width: 1000px)
     overflow: visible
 
-  img
+  .img-wrap
     transform: translate(70%, 40%)
 
     @media screen and (min-width: 480px)
