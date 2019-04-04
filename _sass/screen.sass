@@ -11,8 +11,7 @@ html
   font-size: 16px
 
 body
-  background: linear-gradient(120deg, $color-bg-gradient-dark, $color-bg-gradient-light) 100% 100%
-  overflow-x: hidden
+  background: #111
 
 .contain
   max-width: 1000px
@@ -26,8 +25,6 @@ body
   flex-grow: 1
 
 footer
-  margin-top: 50px
-
   section
     border: none
 
@@ -60,7 +57,7 @@ footer
     max-width: 100%
 
 .post
-  padding: 50px 17px
+  padding: 25px 17px
 
 .post-header
   display: flex
@@ -68,12 +65,18 @@ footer
   color: $color-body
   margin-bottom: 40px
 
-  strong
-    padding: 10px 0
+  .post-header__headline
+    padding: 5px 0 0
     text-transform: uppercase
     font-family: $font-header
     font-weight: 700
-    font-size: 1.8rem
+    font-size: 2.32rem
+
+  strong
+    padding: 1px 0
+    text-transform: uppercase
+    font-family: $font-header
+    font-size: 1.14rem
 
 .post-header__logo
   width: 254px
@@ -87,12 +90,12 @@ footer
 .link-list
   li
     display: block
-    margin-bottom: 15px
+    margin-bottom: 12px
 
 .dul-link
   text-decoration: none
   color: $color-body
-  padding: 10px 0 9px
+  padding: 5px 0 9px;
   border-bottom: 1px solid $color-body
   position: relative
   display: inline-block
@@ -115,30 +118,6 @@ footer
 
 .site-footer
   padding: 17px
-
-.moon
-  position: absolute
-  bottom: 0
-  right: 0
-  z-index: -1
-  width: 800px
-  max-width: 100%
-  overflow: hidden
-
-  @media screen and (min-width: 1000px)
-    overflow: visible
-
-  .img-wrap
-    transform: translate(70%, 40%)
-
-    @media screen and (min-width: 480px)
-      transform: translate(30%, 40%)
-
-    @media screen and (min-width: 1000px)
-      transform: translate(30%, 0%)
-
-
-    width: 100%
 
 // ------------
 // Utility
